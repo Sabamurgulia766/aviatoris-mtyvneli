@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import StarField from './components/starfield';
+import  {  useState } from 'react';
 import Spaceship from './components/spaceship';
 import './App.css';
 import StarFieldWrapper from './components/starFieldWrapper';
@@ -7,9 +6,6 @@ import StarFieldWrapper from './components/starFieldWrapper';
 
 function App() {
   const [rotation, setRotation] = useState(0); // State to manage rotation
-  useEffect(()=>{
-    console.log("hiyo")
-  })
   return (
     <>
       

@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Star, getRandomInt, remap } from '../utils/star'; // Adjust the path as necessary
-
-interface SpaceshipProps {
-  rotation: number; // Rotation value between -1 and 1
-}
+import { Star,  } from '../utils/star'; // Adjust the path as necessary
 
 const StarFieldComponent: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);

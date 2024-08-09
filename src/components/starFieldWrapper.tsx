@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useMemo } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 import StarField from './starfield'; // Adjust the import path as necessary
 
 const StarFieldWrapper = ({ rotation }: { rotation: number }) => {
@@ -9,8 +9,8 @@ const StarFieldWrapper = ({ rotation }: { rotation: number }) => {
 
   useEffect(() => {
     if (!wrapperRef.current) return;
-    console.log("wrapper")
     const wrapper = wrapperRef.current;
+    // @ts-ignore
     const canvas = wrapper.querySelector('#outerspace');
 
     if (!canvas) return;
